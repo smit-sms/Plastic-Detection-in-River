@@ -1,0 +1,10 @@
+path: .
+train: images/train
+val: images/validation
+test:   # optional
+
+names:
+  0: PLASTIC_BAG
+  1: PLASTIC_BOTTLE
+  2: OTHER_PLASTIC_WASTE
+  3: NOT_PLASTIC_WASTE
