@@ -32,3 +32,13 @@ datasets
       ├─ 1.txt
       └─ ...
 ```
+
+The text file for labels contains the data in the following format:
+```
+0 x_n y_n w_n h_n
+1 x_n y_n w_n h_n
+...
+```
+
+## Preview
+![screenshot](/Screenshots/Example-screenshot.png)
