@@ -10,7 +10,7 @@ st.set_page_config(layout="wide", page_title="Plastic in River")
 st.write("# Detect whether there is plastic in river or not")
 
 @st.cache_data
-def load_model() -> None:
+def load_model():
     '''
     Method used to Load the YOLO model
     '''

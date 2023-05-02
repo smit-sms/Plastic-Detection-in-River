@@ -1,19 +1,19 @@
+import random
 from PIL import Image
 from datasets import load_dataset
 from ultralytics import YOLO
 
 # Loading the dataset
-# dataset = load_dataset("Kili/plastic_in_river")
+dataset = load_dataset("Kili/plastic_in_river")
 
-# img = dataset["test"][0]["image"]
-
-img = './datasets/images/validation/10.png'
+# Testing the model against a random image from test dataset
+rand_img = random.randint(0, 100)
+img = dataset["test"][rand_img]["image"]
 
 # Loading the best model
 model = YOLO("runs/detect/train/weights/best.pt")
 
 res = model.predict(img)
-print(res)
 
 # Plotting the bboxes on the image
 res = res[0].plot(line_width=1)
