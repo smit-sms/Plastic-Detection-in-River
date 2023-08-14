@@ -240,7 +240,7 @@ torch==2.0.0
     #   ultralytics
 torchvision==0.15.1
     # via ultralytics
-tornado==6.3.2
+tornado==6.3.3
     # via streamlit
 tqdm==4.65.0
     # via
