@@ -168,7 +168,7 @@ pandas==1.5.3
     #   seaborn
     #   streamlit
     #   ultralytics
-pillow==10.0.1
+pillow==10.2.0
     # via
     #   matplotlib
     #   streamlit
